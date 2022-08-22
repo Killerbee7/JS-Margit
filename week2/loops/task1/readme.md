@@ -1,0 +1,1 @@
+all positive numbers that are odd and smaller than 100 starting from 1
