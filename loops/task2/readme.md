@@ -1,0 +1,1 @@
+all positive numbers that are smaller than 100 and even, in this order: 2 98 4 96 6 94 … Print result in one line.
