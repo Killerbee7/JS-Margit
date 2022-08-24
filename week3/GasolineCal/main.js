@@ -1,18 +1,21 @@
-function gasolineprice()
-{
-    let quantity;
-    let price = Number(prompt("Please enter price of gasoline"));
-    let money = Number(prompt("Please enetr money you want to spend"));
+function gasolineprice() {
+  const price = +document.querySelector("#price").value;
+  const money = +document.querySelector("#money").value;
 
-    quantity = money/price;
-    console.log(quantity);
+  console.log("price:", price, "money:", money);
 
-    if (quantity>10){
-        console.log("Good, you can escape now")
-    }
+  const quantity = money / price;
+  console.log("quantity of fuel you get:", quantity);
 
-    else console.log("Ups, you have to stay here");
+  const answer = document.querySelector("#quantity");
+  let result = document.querySelector("#result");
 
+  let text;
 
+  if (quantity > 10) {
+    text = "you get " + quantity + " l good, you can escape now";
+  } else {
+    text = "you get " + quantity + " l Ups, you have to stay here";
+  }
+  result.textContent = text;
 }
-gasolineprice()

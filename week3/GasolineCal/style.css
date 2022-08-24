@@ -1,11 +1,30 @@
 body {
-    background-color: skyblue;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
 }
 
-    h1{
-        text-align: center;
-        
-    }
-    div{
-        width: auto;
-    }
+header {
+    padding: 25px;
+    background-color: aqua;
+    text-align: center;
+    color: brown;
+}
+ p{
+    color: black;
+    font-size: medium;
+
+ }
+
+ fieldset{
+    columns: bold; font-size: medium;
+    text-align: left;
+ }
+p1{
+    color: brown;
+}
+
+p2{ 
+
+}
