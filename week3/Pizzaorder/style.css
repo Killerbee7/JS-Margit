@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+   
+    color:rgb(247, 245, 246);
+    
+}
+
+html{
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0 0 1rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0;
+}
+
+div{
+    
+    margin:0 0 0.5rem ;
+}
+p{
+    margin: 0 0 0.5rem;
+}
+
+
+body{
+    background: url(pizza.jpeg) no-repeat fixed center center/cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+    
+    
+    
+    
+  
+}
+
+input{
+    font-size: medium;
+    color: black;
+}
+
+button{
+    font-family: inherit;
+    color: rgb(251, 251, 250);
+    background-color: brown;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+
+
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ordering Pizza</title>
+  </head>
+  <body>
+    <h1>Order Pizza you love the easiest way</h1>
+
+    <form>
+      <h2>Please enter your name.</h2>
+
+      <input type="text" id="Name" />
+
+      <h2>What is the size of pizza you want?</h2>
+
+      <div>
+        <label for="css">pizza for 2 people 7.5€</label>
+        <input type="radio" id="pizza2" name="pizza2" value="pizza1" />
+      </div>
+      <div>
+        <label for="css">pizza for 4 people 10.5€</label>
+        <input type="radio" id="pizza4" name="pizza4" value="pizza1" />
+      </div>
+
+      <div>
+        <label for="css">pizza for 6 people 12.50€</label>
+        <input type="radio" id="pizza6" name="pizza6" value="pizza1" />
+      </div>
+
+      <div>
+        <label for="css">pizza for 8 people 15.50€</label>
+        <input type="radio" id="pizza8" name="pizza8" value="pizza1" />
+      </div>
+
+      <h2>Please select topping</h2>
+      <p>(First four are free, each extra will cost 0.5€.)</p>
+
+      <div>
+        <label for="css">Pepporoni</label>
+        <input type="checkbox" id="topping1" name="topping1" value="topping1" />
+      </div>
+
+      <div>
+        <label for="css">Sausage</label>
+        <input type="checkbox" id="topping2" name="topping2" value="topping2" />
+      </div>
+
+      <div>
+        <label for="css">Mushrooms</label>
+        <input type="checkbox" id="topping3" name="topping3" value="topping3" />
+      </div>
+
+      <div>
+        <label for="css">Bacons</label>
+        <input type="checkbox" id="topping4" name="topping4" value="topping4" />
+      </div>
+
+      <div>
+        <label for="css">Onions</label>
+        <input type="checkbox" id="topping5" name="topping5" value="topping5" />
+      </div>
+
+      <div>
+        <label for="css">Extra Cheese</label>
+        <input type="checkbox" id="topping6" name="topping6" value="topping6" />
+      </div>
+
+      <div>
+        <label for="css">Chicken</label>
+        <input type="checkbox" id="topping7" name="topping7" value="topping7" />
+      </div>
+
+      <div>
+        <label for="css">Olives</label>
+        <input type="checkbox" id="topping8" name="topping8" value="topping8" />
+      </div>
+
+      <div>
+        <label for="css">Tomatoes</label>
+        <input type="checkbox" id="topping9" name="topping9" value="topping9" />
+      </div>
+
+      <div>
+        <label for="css">Pineapple</label>
+        <input
+          type="checkbox"
+          id="topping10"
+          name="topping10"
+          value="topping10"
+        />
+      </div>
+
+      <h2>What is the delivery method?</h2>
+      <p>Home delivery will cost you extra 5 euros</p>
+
+      <select name="delivery" id="delivery">
+        <option value="Homedelivery">Home delivery ,+5 €</option>
+        <option value="Homedelivery">Eat In</option>
+        <option value="Homedelivery">Take Away</option>
+      </select>
+      <div>
+        <button type="button">Order Pizza</button>
+      </div>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>
