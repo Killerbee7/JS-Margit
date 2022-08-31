@@ -1,0 +1,1 @@
+Asks 25 numbers form the user. In the end program prints out average of the numbers.
