@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0.6rem;
+    box-sizing: border-box;
+
+}
+
+html{
+   
+    font-size: 18px;
+    
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    color: rgb(43, 226, 86);
+    padding: 2rem;
+    border-style: outset;
+    border-color: rgb(0, 6, 4);
+    background:#7289de;
+    font-size: 2.5rem;
+
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+form {
+    text-align: left;
+}
+
+button{
+    
+    background-color: #aeb9e2;
+    padding: 0.6rem 2rem;
+}
+
+p{
+    padding: 2rem;
+}

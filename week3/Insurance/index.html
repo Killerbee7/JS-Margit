@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>InsuranceCalculator</title>
+  </head>
+  <body>
+    <h1>Insurance made easier for you.</h1>
+
+    <form>
+      <h2>Please tell us your full name.</h2>
+      <input type="text" placeholder="Enter your name." id="name" />
+
+      <h2>What is your age?</h2>
+
+      <input type="number" placeholder="Age" min="0" id="age" />
+
+      <h2>What is your current health condition?</h2>
+      <div>
+        <input
+          type="checkbox"
+          id="Hypertension"
+          value="Hypertension"
+          class="condition"
+        />
+        <label for="Hypertension">Hypertension</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="Bloodsugar"
+          value="Bloodsugar"
+          class="condition"
+        />
+        <label for="Bloodsugar">Bloodsugar</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="Overweight"
+          value="Overweight"
+          class="condition"
+        />
+        <label for="Overweight">Overweight</label>
+      </div>
+
+      <h2>Let us know your daily habits.</h2>
+
+      <div>
+        <input type="checkbox" id="Smoking" value="Smoking" class="habits" />
+        <label for="Smoking">Smoking</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Drugs" value="Drugs" class="habits" />
+        <label for="Drugs">Drugs</label>
+      </div>
+
+      <div>
+        <input
+          type="checkbox"
+          id="Dailyexercise"
+          value="Daily exercise"
+          class="goodhabits"
+        />
+        <label for="Dailyexercise">Dailyexercise</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="Alcohol" value="Alcohol" class="habits" />
+        <label for="Alcohol">Alcohol</label>
+      </div>
+
+      <div>
+        <button type="submit">Calculate</button>
+        <p>Press calculate policy price</p>
+      </div>
+
+      <div>
+        <p id="calculate"></p>
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
