@@ -14,6 +14,9 @@ html{
 
 h1 {
     margin: 0 0 1rem;
+    color: rgb(216, 252, 35);
+    font-size: 2rem;
+
 }
 
 h2{
@@ -45,14 +48,33 @@ input{
     font-size: medium;
     color: black;
 }
-
+select,
 button{
     font-family: inherit;
-    color: rgb(251, 251, 250);
-    background-color: brown;
+    color: rgb(8, 8, 4);
+    background-color: rgb(197, 221, 37);
     padding: 0.5rem 1rem;
     margin-top: 1rem;
+    cursor: pointer
+}
+
+button:hover{
+    color: white;
+    background-color: pink;
+    padding: 1rem, 2rem;
     cursor: pointer;
+}
+
+#results{
+    position: fixed;
+    color: rgb(255, 35, 35);
+    font-size: 3rem;
+    border-radius: 10px;
+   
+}
+
+span{
+    color: rgb(243, 243, 134);
 }
 
 
