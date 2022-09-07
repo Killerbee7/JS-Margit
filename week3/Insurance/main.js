@@ -3,7 +3,7 @@ const customer = document.querySelector("#name");
 const customerage = document.querySelector("#age");
 const health = document.querySelectorAll('input[class="condition"]');
 const bad = document.querySelectorAll('input[class="habits"]');
-const good = document.querySelector('input[class="goodhabits"]');
+const good = document.querySelectorAll('input[class="goodhabits"]');
 const calculate = document.querySelector("#calculate");
 
 const calprice = (event) => {
@@ -50,7 +50,7 @@ const calprice = (event) => {
     price += 0.03 * price;
   }
 
-  Bad.forEach((item) => {
+  bad.forEach((item) => {
     if (item.checked) {
       badhabits.push(item.value);
     }
@@ -60,7 +60,32 @@ const calprice = (event) => {
     price += 0.05 * price;
   }
 
-  console.log(price);
+  else if(badhabits.length===2){
+    price += 0.10*price;
+  }
+
+  else if(badhabits.length===3){
+    price += 0.15*price;
+  }
+
+
+
+  good.forEach((item) => {
+    if (item.checked) {
+      goodhabits.push(item.value);
+    }
+  });
+
+  if (goodhabits.length === 1) {
+    price -= 0.05 * price;
+  }
+
+  calculate.innerHTML = `Hi, <span>${CusName}</span> your total price for insurance premium is: <span>${price}<span>.`;
+
+
+  form.reset();
+
+
 };
 
 form.addEventListener("submit", calprice);
