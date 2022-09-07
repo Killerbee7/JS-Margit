@@ -80,7 +80,7 @@ const calprice = (event) => {
     price -= 0.05 * price;
   }
 
-  calculate.innerHTML = `Hi, <span>${CusName}(${age} years old)</span> your total price for insurance premium is: <span>${price}</span>.<p>
+  calculate.innerHTML = `Hi, <span>${CusName}(${age} years old)</span> your total risk score for insurance premium is: <span>${price}</span>.<p>
   <p>Your have following health conditions:<span>${healthResult}</span>.</p>
   <p>Your have following daiily habits:<span>${goodhabits, badhabits}</span>.</p>`;
 
