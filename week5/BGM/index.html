@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BGM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Linear gradiant generator</h1>
+
+      <form id="bgm">
+        <h2>Colors</h2>
+        <div class="color">
+          <input class="color1" type="color" name="color1" value="#564838" />
+          <input class="color2" type="color" name="color2" value="#476557" />
+        </div>
+        <h2>Direction</h2>
+
+        <div class="directions">
+          <div class="direction">
+            <input
+              type="radio"
+              name="direction"
+              value="to bottom right"
+              id="DBR"
+            />
+            <label for="DBR"
+              ><span class="material-icons">south_east</span></label
+            >
+          </div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to bottom" id="DB" />
+            <label for="DB"><span class="material-icons">south</span></label>
+          </div>
+
+          <div class="direction">
+            <input
+              type="radio"
+              name="direction"
+              value="to bottom left"
+              id="DBL"
+            />
+            <label for="DBL"
+              ><span class="material-icons">south_west</span></label
+            >
+          </div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to right" id="DR" />
+            <label for="DR"><span class="material-icons">east</span></label>
+          </div>
+
+          <div class="direction"></div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to left" id="DL" />
+            <label for="DL"><span class="material-icons">west</span></label>
+          </div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to top right" id="DTR" />
+            <label for="DTR"
+              ><span class="material-icons">north_east</span></label
+            >
+          </div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to top" id="DT" />
+            <label for="DT"><span class="material-icons">north</span></label>
+          </div>
+
+          <div class="direction">
+            <input type="radio" name="direction" value="to top left" id="DTL" />
+            <label for="DTL"
+              ><span class="material-icons">north_west</span></label
+            >
+          </div>
+        </div>
+      </form>
+      <h2>CSS Code</h2>
+      <p>linear-gradient(#564838, #476557);</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
