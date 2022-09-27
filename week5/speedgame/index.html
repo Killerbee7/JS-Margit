@@ -11,10 +11,15 @@
     <title>Speed Game</title>
   </head>
   <body>
+    
     <header>
+      <h4>Remaining lives:<span id="live"></span></h4>
+     
       <h1>Catch the Fish</h1>
       
       <h2>You caught:<span id="score"></span></h2>
+
+      
     
     </header>
     <div class="container0">
@@ -36,11 +41,16 @@
    
     </div>
     <div class="overlay">
-      <h3>Hula Hu-----Game Over</h3>
-      <p>Your score is <span id="overlayScore">0</span>, sorry you are a noob player</p>
+      <h3>💀💀Game Over💀💀</h3>
+      <p>Your score is <span id="overlayScore">0</span>, Keep trying!!</p>
    
       <button type="button" id="home">Retry</button>
     </div>
+
+    <audio id="startsound" src="/sound/sound.wav"></audio>
+    <audio id="startsound1" src="/sound/mixkit-chillstep-house-108 (1).mp3"></audio>
+    <audio id="stopsound" src="/sound/stop.mp3"></audio>
+    <audio id="stopsound2" src="/sound/stopeffect.wav"></audio>
   </body>
   <script src="main.js"></script>
 </html>

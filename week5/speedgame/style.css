@@ -7,7 +7,7 @@ body{
   text-align: center;
 }
 header{
-  height: 10vh;
+  height: 15vh;
   background-color: black;
   font-size: 25px;
 }
@@ -16,7 +16,7 @@ header{
 .container0 {
   width: 100%;
   height: 45vh;
-  background-image: url(giphy.webp);
+  background-image: url(/images/giphy.webp);
   background-repeat: no-repeat;
   border-style: none;
   background-size: 100% 100%;
@@ -45,7 +45,7 @@ header{
     border-style: dotted; 
   }
   .click.active{
-    background-image: url(fish.gif);
+    background-image: url(/images/fish.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +64,21 @@ header{
     text-align: center;
     margin-top: 50px;
   }
-  
+  h4{
+    color: rgb(234, 255, 0);
+    
+  }
+  h4{
+    
+      position: absolute;
+      top: 8px;
+      left: 16px;
+      font-size: 18px;
+  }
+  p1{
+    display: block;
+  }
+    
   button {
     
     align-items: center;
@@ -103,11 +117,11 @@ button:hover{
     background: rgb(34, 25, 25);
     justify-content: center;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(251, 0, 0);
   }
   p{
     padding: 100px;
-    color: white;
+    color: rgb(251, 251, 251);
     font-size: 30px;
   }
   
