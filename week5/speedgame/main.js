@@ -2,13 +2,16 @@ const startButton = document.querySelector("#startgame");
 const stopButton = document.querySelector("#stopgame");
 const clickBox = document.querySelectorAll(".click");
 const result = document.querySelector("#score");
+//overlay area
 const overlayScore = document.querySelector("#overlayScore");
 const closeButton = document.querySelector("#home");
 const overlay = document.querySelector(".overlay");
+//Sound inputs
 const startSound = document.querySelector("#startsound");
 const startSound1 = document.querySelector("#startsound1");
 const stopSound = document.querySelector("#stopsound");
 const stopSound2 = document.querySelector("#stopsound2");
+//round(lives)
 const livesRemain = document.querySelector("#live");
 
 let active = 0;
@@ -53,9 +56,10 @@ const startgame = () => {
 
   active = nextActive;
   console.log(active);
-  timer = setTimeout(startgame, 1000);
-  pace = pace - 500;
+  timer = setTimeout(startgame, pace);
+  pace = pace - 10;
   round++;
+  timer++;
   livesRemain.textContent = 4 - round;
 
   function pickNew(active) {
@@ -70,12 +74,13 @@ const startgame = () => {
 };
 
 const stopgame = () => {
-  
-  stopSound2.play;
+  stopSound2.play();
   startSound1.pause();
   stopSound.play();
   overlay.style.visibility = "visible";
   clearTimeout(timer);
+  livesRemain.textContent = 0;
+  clickBox.style.pointerEvents = "none";
 };
 
 resetGame = () => {

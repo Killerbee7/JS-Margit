@@ -1,133 +1,120 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   text-align: center;
 }
-header{
+header {
   height: 15vh;
   background-color: black;
   font-size: 25px;
+  color: gold;
 }
-
 
 .container0 {
   width: 100%;
   height: 45vh;
-  background-image: url(/images/giphy.webp);
+  background-image: url(./images/giphy.webp);
   background-repeat: no-repeat;
   border-style: none;
   background-size: 100% 100%;
 }
 
 .container {
-    width: 100%;
-    height: 45vh;
-    background-image: url(https://images.unsplash.com/photo-1475372674317-8003c861cb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80);
-    border-style: none;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    
+  width: 100%;
+  height: 45vh;
+  background-image: url(https://images.unsplash.com/photo-1475372674317-8003c861cb6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80);
+  border-style: none;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-
 /*circles*/
-.click{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    padding: 10px;
-    margin-top: 60px;
-    cursor: pointer;
-    display: inline-block;
-    border-style: dotted; 
-  }
-  .click.active{
-    background-image: url(/images/fish.gif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    
-  }
-  h1 {
-      
-    color: gold;
-    font-size: 70pxs;
-  }
-  h2 {
-    color: gold;
-  }
-  .startgame {
-    text-align: center;
-    margin-top: 50px;
-  }
-  h4{
-    color: rgb(234, 255, 0);
-    
-  }
-  h4{
-    
-      position: absolute;
-      top: 8px;
-      left: 16px;
-      font-size: 18px;
-  }
-  p1{
-    display: block;
-  }
-    
-  button {
-    
-    align-items: center;
-    width: 125px;
-    height: 50px;
-    cursor: pointer;
-    margin: 50px auto;
-    border-radius: 20%;
+.click {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 60px;
+  cursor: pointer;
+  display: inline-block;
+  border-style: dotted;
+}
+.click.active {
+  background-image: url(./images/fish.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-size: 70pxs;
+}
+h2 {
+  padding-top: 20px;
+}
+.startgame {
+  text-align: center;
+  margin-top: 50px;
+}
+h4 {
+  padding-top: 10px;
+  color: gold;
+}
+h4 {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+p1 {
+  display: block;
+}
 
-  }
-.btnDiv{
+button {
+  align-items: center;
+  width: 125px;
+  height: 50px;
+  cursor: pointer;
+  margin: 50px auto;
+  border-radius: 20%;
+}
+.btnDiv {
   display: flex;
   flex-direction: row;
 }
 
- .stopBtn{
-
+.stopBtn {
   display: none;
-  
- }
-  /* MODAL */
-button:hover{
+}
+
+button:hover {
   background-color: yellow;
 }
 
-  
-  .overlay {
-    visibility: hidden;
-    position: fixed;
-    padding: 200px;
-    top: 0;
-    left:200px;
-    right: 200px;
-    bottom: 0;
-    font-size: 50px;
-    background: rgb(34, 25, 25);
-    justify-content: center;
-    text-align: center;
-    color: rgb(251, 0, 0);
-  }
-  p{
-    padding: 100px;
-    color: rgb(251, 251, 251);
-    font-size: 30px;
-  }
-  
-  .overlay.visible.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  padding: 200px;
+  top: 0;
+  left: 200px;
+  right: 200px;
+  bottom: 0;
+  font-size: 50px;
+  background: rgb(34, 25, 25);
+  justify-content: center;
+  text-align: center;
+  color: rgb(251, 0, 0);
+}
+p {
+  padding: 100px;
+  color: rgb(251, 251, 251);
+  font-size: 30px;
+}
+
+.overlay.visible.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

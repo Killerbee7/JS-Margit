@@ -4,28 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" <link rel="stylesheet" href="style.css" />
     <title>Speed Game</title>
   </head>
   <body>
-    
     <header>
-      <h4>Remaining lives:<span id="live"></span></h4>
-     
+      <h4>Remaining miss:<span id="live">3</span></h4>
+
       <h1>Catch the Fish</h1>
-      
+
       <h2>You caught:<span id="score"></span></h2>
-
-      
-    
     </header>
-    <div class="container0">
-    </div>
+    <div class="container0"></div>
     <div class="container">
-
       <div id="clickbox" class="clicks">
         <div class="click" value="1"></div>
         <div class="click" value="2"></div>
@@ -33,24 +24,27 @@
         <div class="click" value="4"></div>
       </div>
 
-
-<div class="btnDiv">
-      <button type="button" id="startgame" class="startBtn">Start Game</button>
-      <button type="button" id="stopgame" class="stopBtn">Stop Game</button>
-    </div>
-   
+      <div class="btnDiv">
+        <button type="button" id="startgame" class="startBtn">
+          Start Game
+        </button>
+        <button type="button" id="stopgame" class="stopBtn">Stop Game</button>
+      </div>
     </div>
     <div class="overlay">
       <h3>💀💀Game Over💀💀</h3>
       <p>Your score is <span id="overlayScore">0</span>, Keep trying!!</p>
-   
+
       <button type="button" id="home">Retry</button>
     </div>
 
-    <audio id="startsound" src="/sound/sound.wav"></audio>
-    <audio id="startsound1" src="/sound/mixkit-chillstep-house-108 (1).mp3"></audio>
-    <audio id="stopsound" src="/sound/stop.mp3"></audio>
-    <audio id="stopsound2" src="/sound/stopeffect.wav"></audio>
+    <audio id="startsound" src="./sound/sound.wav"></audio>
+    <audio
+      id="startsound1"
+      src="./sound/mixkit-chillstep-house-108 (1).mp3"
+    ></audio>
+    <audio id="stopsound" src="./sound/stop.mp3"></audio>
+    <audio id="stopsound2" src="./sound/stopeffect.wav"></audio>
   </body>
   <script src="main.js"></script>
 </html>
