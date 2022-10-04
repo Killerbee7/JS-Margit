@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Pokedox</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <h1>Pokedox</h1> 
+      <h1>Pokedox</h1>
     </header>
+    <div class="container">
 
     <section class="searcharea">
-
-        <div class="search">
+      <div class="search">
         <label for="search">Search</label>
-        <input id="search" type="text" class="search">
-    </div>
-        
-        <div class="gen">
-        <label for="gen1">Gen1</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen1">
-        <label for="gen1">Gen2</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen2">
-        <label for="gen1">Gen3</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen3">
-        <label for="gen1">Gen4</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen4">
-        <label for="gen1">Gen5</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen5">
-        <label for="gen1">Gen6</label>
-        <input class="gen" type="checkbox" name="Gen1" id="gen6">
-    </div>
-        
-    </section>
+        <input id="search" type="text" class="search" />
+      </div>
 
-    <div class="image_container">
-        <div class="image">
-            <img src="PIKA.png" alt="">
-            <h2>Pokemon Name</h2>
-        </div>
-        <div class="image">
-            <img src="PIKA.png" alt="">
-            <h2>Pokemon Name</h2>
-        </div>
-        <div class="image">
-            <img src="PIKA.png" alt="">
-            <h2>Pokemon Name</h2>
-        </div>
-        <div class="image">
-            <img src="PIKA.png" alt="">
-            <h2>Pokemon Name</h2>
-        </div>
-        
+      <div class="gensearch">
+        <label for="gen1">Gen1</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen1" />
+        <label for="gen1">Gen2</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen2" />
+        <label for="gen1">Gen3</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen3" />
+        <label for="gen1">Gen4</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen4" />
+        <label for="gen1">Gen5</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen5" />
+        <label for="gen1">Gen6</label>
+        <input class="gen" type="checkbox" name="Gen1" id="gen6" />
+      </div>
+    </section>
+    <div class="poke_container">
+    <div class="pokemoncards">
+      <img src="PIKA.png" alt="" />
+      <h2 class="name">Pikachu</h2>
     </div>
-    
-</body>
-<script src="main.js"></script>
+    </div>
+
+    <div class="buttons">
+      <input class="previous" type="button" value="Previous" />
+      <input class="next" type="button" value="Next" />
+    </div>
+</div>
+  </body>
+  <script src="main.js"></script>
 </html>

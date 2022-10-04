@@ -1,9 +1,13 @@
 *{
     margin: 0;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 
 }
+.container{
+    background-color: aquamarine;
+}
+
 .header{
     background-color: rgb(3, 3, 3);
     color: azure;
@@ -13,38 +17,59 @@
 }
 
 .searcharea{
-    padding: 15px;
     text-align: center;
     align-content: center;
 }
 h1{
     padding-top: 20px;
+    margin: 0 0 20px;
 }
 .search{
 padding: 10px;
 font-size: 20px;
 }
-
-.gen{
-    display: inline-block;
-    margin: 10px;
+.poke_container{
+  
+   background: transparent;
+   display: grid;
+   gap: 50px;
+   grid-template-columns: auto auto auto auto;
+   height: auto  
 }
 
-.image_container{
+.pokemoncards{
+    
+    background-color: red;
+    border-radius: 15px;
     background: transparent;
     display: grid;
     gap: 50px;
     grid-template-columns: auto auto auto auto;
-    height: auto  
-}
-.image{
-    margin: ;
-    border-style: inset;
-    
+    height: auto;
+    align-items: center;
+    margin: 25px 25px 0 50px;
     
 }
-img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+.container{
+    border: dotted;
+    border-color: black;
+}
+.pokemoncards img{
+    margin: 10px 0;
+    width: 80%;
+}
+ 
+.pokemoncards img:hover{
+    transform: scale(2)
+
+}
+
+h3{
+    color: blue;
+    margin: 10px;
+    background-color: aqua;
+
+}
+ul{
+    text-align: center;
 }
