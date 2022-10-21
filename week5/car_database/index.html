@@ -1,80 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Car Database</title>
-</head>
-<header>
+  </head>
+  <header>
     <div class="header">
-        <h1>Search car by license plate number</h1>   
-        
+      <h1>Search car by license plate number</h1>
     </div>
 
     <div>
-        <label for="searcharea">Licence Number</label>
-        <input type="text" id="searcharea">
-        <button class="search">Search</button>
+      <label for="searcharea">Licence Number:</label>
+      <input type="text" id="searcharea" />
+      <button class="search" >Search</button>
     </div>
 
-    <div class="search-result">
-        <p id="search-result-txt"></p>
-      </div>
-</header>
-<body>
+    <div>
+      <p id="searchresult"></p>
+    </div>
+  </header>
+  <body>
     <div class="container">
-<div class="inputarea">
-    <h2>Enter Car Data</h2>
-   <div class="cardata">
-    <label for="searcharea">Licence Number</label>
-    <input type="text" name="" id="licenceNum">
-    <label for="searcharea">Car maker</label>
-    <input type="text" name="" id="carmaker">
-    <label for="searcharea">Car model</label>
-    <input type="text" name="" id="Carmodel">
-    <label for="searcharea">Car owner</label>
-    <input type="text" name="" id="Carowner">
-    <label for="searcharea">Car Price</label>
-    <input type="text" name="" id="Carprice">
-    <label for="searcharea">Car color</label>
-    <input type="text" id="carcolor"> 
-</div> 
-<div class="btns">
-    <button type="submit" class="addcar">Add Car</button>
-    <button type="submit" class="reset">Reset</button>
-</div>
+      <div class="inputarea">
+        <h2>Enter Car Data</h2>
+        <form id="form">
+          <div class="cardata">
+            <label for="searcharea">Car owner</label>
+            <input type="text" name="" id="carOwner" />
+            <label for="searcharea">Licence Number</label>
+            <input type="text" name="" id="licenceNum" />
+            <label for="searcharea">Car maker</label>
+            <input type="text" name="" id="carMaker" />
+            <label for="searcharea">Car model</label>
+            <input type="text" name="" id="carModel" />
+            <label for="searcharea">Car year</label>
+            <input type="text" name="" id="carYear" />
+            <label for="searcharea">Car color</label>
+            <input type="text" id="carColor" />
+          </div>
+        </form>
 
-
-</div>
-
-<div class="database">
-    <h2>Cars Database</h2>
-
-    <div class="datbasetable" id="databasetable">
-
-        <table
-          class="table"
-          id="myTable"
-        >
-          <thead>
-            <tr>
-              <th>License No.</th>
-              <th>Owner</th>
-              <th>Maker</th>
-              <th>Model</th>
-              <th>Body Type</th>
-              <th>Reg. Year</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-        <button id="reset-table" onclick="resetTable()">Reset Table</button>
+          <div class="btns">
+            <button type="submit" id="addcar">Add Car</button>
+            <button type="submit" id="reset" onclick="resetForm()">Reset</button>
+          </div>
+       
       </div>
-</div>
-</div>
 
-<script src="main.js"></script>
-</body>
+      <div class="database">
+        <h2>Cars Database</h2>
+
+        <div class="datbasetable" id="databasetable">
+          <table class="table" id="myTable">
+            <thead>
+              <tr>
+                <th>Owner</th>
+                <th>License No.</th>
+                <th>Maker</th>
+                <th>Model</th>
+                <th>Reg. Year</th>
+                <th>Car color</th>
+              </tr>
+            </thead>
+            <tbody id="tableData"></tbody>
+          
+          </table>
+          <button id="resetTable" onclick="tableClear()">Reset Table</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
