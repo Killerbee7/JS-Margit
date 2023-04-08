@@ -1,2 +1,2 @@
 # JS-Margit
-Repository for Margit's JavaScript tasks
+Repository for Margit's JavaScript tasks. BCH
