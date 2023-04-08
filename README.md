@@ -1,2 +1,2 @@
 # Javascript Margit Tennosaar
-Repository for Margit's JavaScript tasks. BCH
+Repository for Margit's JavaScript tasks. Business College Helsinki
